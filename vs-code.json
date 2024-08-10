@@ -1,0 +1,85 @@
+{
+    // editor
+    "editor.fontSize": 18,
+    "editor.fontFamily": "Fira Code, Operator Mono",
+    "editor.fontLigatures": true,
+    "editor.wordWrap": "on",
+    "editor.lineHeight": 30,
+    "window.zoomLevel": 1.5,
+    "editor.minimap.enabled": false,
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": "comment",
+                "settings": {
+                    "fontStyle": "italic"
+                }
+            }
+        ]
+    },
+    // cursor
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.cursorBlinking": "expand",
+    // config related to code formatting
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit",
+        "source.fixAll.tslint": "explicit",
+        "source.organizeImports": "explicit"
+    },
+    "eslint.alwaysShowStatus": true,
+    //terminal
+    "terminal.integrated.fontSize": 17,
+    "terminal.integrated.fontWeight": "normal",
+    "terminal.integrated.fontFamily": "Fira Code, Operator Mono",
+    "workbench.colorTheme": "Dark Chai",
+    "workbench.iconTheme": "vscode-icons",
+    // terminal customization
+    "workbench.colorCustomizations": {
+        // "terminal.background": "#1D2021",
+        "terminal.background": "#181323",
+        "terminal.foreground": "#fff",
+        "terminalCursor.background": "#A89984",
+        "terminalCursor.foreground": "#A89984",
+        "terminal.ansiBlack": "#1D2021",
+        "terminal.ansiBlue": "#0D6678",
+        "terminal.ansiBrightBlack": "#665C54",
+        "terminal.ansiBrightBlue": "#0D6678",
+        "terminal.ansiBrightCyan": "#8BA59B",
+        "terminal.ansiBrightGreen": "#95C085",
+        "terminal.ansiBrightMagenta": "#8F4673",
+        "terminal.ansiBrightRed": "#FB543F",
+        "terminal.ansiBrightWhite": "#FDF4C1",
+        "terminal.ansiBrightYellow": "#FAC03B",
+        "terminal.ansiCyan": "#8BA59B",
+        "terminal.ansiGreen": "#04c4d2",
+        "terminal.ansiMagenta": "#da0087",
+        "terminal.ansiRed": "#FB543F",
+        "terminal.ansiWhite": "#6c430a",
+        "terminal.ansiYellow": "#06e590"
+    },
+    "files.autoSave": "afterDelay",
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "json.schemas": [
+    
+    {
+        "fileMatch": [
+            "/myfile"
+        ],
+        "url": "schemaURL"
+    }
+    ],
+    "prettier.tabWidth": 4,
+    "workbench.settings.applyToAllProfiles": [],
+    "tabnine.experimentalAutoImports": true,
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
+    "emmet.includeLanguages": {
+        "vue-html": "html",
+        "javascript": "javascriptreact"
+    },
+    "editor.tabSize": 4,
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "javascript.updateImportsOnFileMove.enabled": "always"
+}
