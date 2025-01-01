@@ -5,8 +5,8 @@
     "editor.fontLigatures": true,
     "editor.wordWrap": "on",
     "editor.lineHeight": 30,
-    "window.zoomLevel": 1.5,
-    "editor.minimap.enabled": false,
+    "window.zoomLevel": 1.4,
+    "editor.minimap.autohide": true,
     "editor.tokenColorCustomizations": {
         "textMateRules": [
             {
@@ -16,6 +16,9 @@
                 }
             }
         ]
+    },
+    "[prisma]": {
+        "editor.defaultFormatter": "Prisma.prisma"
     },
     // cursor
     "editor.cursorSmoothCaretAnimation": "on",
@@ -33,12 +36,89 @@
     "terminal.integrated.fontSize": 17,
     "terminal.integrated.fontWeight": "normal",
     "terminal.integrated.fontFamily": "Fira Code, Operator Mono",
-    "workbench.colorTheme": "Dark Chai",
-    "workbench.iconTheme": "vscode-icons",
-    // terminal customization
+    "workbench.colorTheme": "Catppuccin Mocha",
     "workbench.colorCustomizations": {
-        // "terminal.background": "#1D2021",
-        "terminal.background": "#181323",
+        //editor colors customizations
+        "editor.background": "#0a021a",
+        "editorGroup.emptyBackground": "#0a021a",
+        "editorGutter.background": "#0a021a",
+        // "editorIndentGuide.background1": "#003366",
+        "editorIndentGuide.activeBackground1": "#0369ce",
+
+        // Side Panel Background and Foreground
+        "sideBar.background": "#0a021a",
+        "sideBar.foreground": "#ffffffc0",
+
+        // Title Bar in Side Panel
+        "sideBarSectionHeader.background": "#482a83",
+        // "sideBarSectionHeader.foreground": "#ffffff",
+        // "sideBarSectionHeader.border": "#00509e",
+
+        "sideBar.border": "#33333333",
+
+        // Breadcrumb Background
+        // "breadcrumb.background": "#241e31",
+
+        // Active Tab
+        // "tab.activeBackground": "#003366",
+        // "tab.activeForeground": "#ffffff",
+        // "tab.activeBorder": "#ffcc00",
+
+        // Inactive Tabs
+        // "tab.inactiveBackground": "#0a021a",
+        // "tab.inactiveForeground": "#888888",
+
+        // Hover Effect
+        // "tab.hoverBackground": "#00509e",
+        // "tab.hoverForeground": "#ffffff",
+        // Unfocused Tabs
+        // "tab.unfocusedActiveBackground": "#00264d",
+        // "tab.unfocusedActiveForeground": "#cccccc",
+        // "tab.unfocusedInactiveBackground": "#001f3f",
+        // "tab.unfocusedInactiveForeground": "#555555",
+
+        // Activity Bar (the vertical bar on the left)
+        "activityBar.background": "#0f0425",
+        "activityBar.foreground": "#ffffffc0",
+        // Scrollbar in the Side Panel
+        "scrollbarSlider.background": "#0a021a",
+        "scrollbarSlider.hoverBackground": "#ffffff0e",
+        // "scrollbarSlider.activeBackground": "#ffffff0e"
+
+        //status Bar
+        // "statusBar.background": "#090b0e",
+        // "statusBar.foreground": "#ffffff",
+        "editorSuggestWidget.background": "#0a021a",
+        // "editorSuggestWidget.highlightForeground": "#ffcc00",
+
+        "editorSuggestWidget.selectedBackground": "#482a83",
+        "quickInput.background": "#1e1e1e",
+        "quickInput.foreground": "#ffffff",
+        "quickInputTitle.background": "#003366",
+        "editorSuggestWidget.foreground": "#ffffff",
+
+        // "gitDecoration.modifiedResourceForeground": "#13a8d2", // i kept it for color
+        "gitDecoration.modifiedResourceForeground": "#13a8d2", // Modified files
+        "gitDecoration.deletedResourceForeground": "#ff0000", // Deleted files
+        "gitDecoration.untrackedResourceForeground": "#13d286", // Untracked files
+        "gitDecoration.conflictingResourceForeground": "#ffcc00", // Conflicting files
+        // "gitDecoration.ignoredResourceForeground": "#888888", // Ignored files
+
+        // TODO: make color change when you need
+        "diffEditor.insertedTextBackground": "#00800040", // Added text background
+        "diffEditor.removedTextBackground": "#ff000040", // Removed text background
+        "diffEditor.border": "#444444", // Border around diff editor
+        "diffEditor.diagonalFill": "#888888", // Background stripe for unchanged lines
+
+        "list.activeSelectionBackground": "#4c02f924", // Background color of the selected file
+        "list.activeSelectionForeground": "#ffffff", // Text color of the selected file
+        "list.inactiveSelectionBackground": "#4c02f924", // Background when unfocused
+        "list.inactiveSelectionForeground": "#cccccc", // Text color when unfocused
+        // "list.hoverBackground": "#004080", // Background color on hover
+        // "list.hoverForeground": "#ffffff", // Text color on hover
+
+        // terminal customization
+        "terminal.background": "#0a021a",
         "terminal.foreground": "#fff",
         "terminalCursor.background": "#A89984",
         "terminalCursor.foreground": "#A89984",
@@ -59,16 +139,12 @@
         "terminal.ansiWhite": "#6c430a",
         "terminal.ansiYellow": "#06e590"
     },
-    "files.autoSave": "afterDelay",
     "terminal.integrated.defaultProfile.windows": "Git Bash",
     "json.schemas": [
-    
-    {
-        "fileMatch": [
-            "/myfile"
-        ],
-        "url": "schemaURL"
-    }
+        {
+            "fileMatch": ["/myfile"],
+            "url": "schemaURL"
+        }
     ],
     "prettier.tabWidth": 4,
     "workbench.settings.applyToAllProfiles": [],
@@ -81,5 +157,9 @@
     "editor.tabSize": 4,
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
-    "javascript.updateImportsOnFileMove.enabled": "always"
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "eslint.codeActionsOnSave.rules": null,
+    "files.autoSave": "afterDelay",
+    "workbench.iconTheme": "catppuccin-perfect-dark",
+    "workbench.productIconTheme": "icons-carbon"
 }
